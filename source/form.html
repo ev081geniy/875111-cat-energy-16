@@ -27,8 +27,89 @@
       </nav>
     </header>
 
-    <main>
-
+    <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="program-selection" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="program-selection__general selection-general">
+          <ul class="selection-general__list">
+            <li class="selection-general__item">
+              <label for="field-name">Имя:*</label>
+              <input type="text" id="field-name" name="cat-name" placeholder="Барсик" required>
+            </li>
+            <li class="selection-general__item">
+              <label for="field-weight">Вес (кг):*</label>
+              <input type="text" id="field-weight" name="cat-weight" placeholder="7" required>
+            </li>
+            <li class="selection-general__item">
+              <label for="field-age">Возраст (лет):</label>
+              <input type="text" id="field-age" name="cat-age" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__program-type program-type">
+          <ul class="program-type__list">
+            <li class="program-type__item">
+              <input type="radio" id="radio-losing" name="program-type" value="losing" checked>
+              <label for="radio-losing">Похудение</label>
+            </li>
+            <li class="program-type__item">
+              <input type="radio" id="radio-qaining" name="program-type" value="gaining">
+              <label for="radio-qaining">Набор массы</label>
+            </li>
+            <li class="program-type__item">
+              <input type="radio" id="radio-advice" name="program-type" value="advice">
+              <label for="radio-advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__contact selection-contact">
+          <legend class="selection-contact__title form-subtitle">Контактные данные (владельца кота)</legend>
+          <ul class="selection-contact__list">
+            <li class="selection-contact__item">
+              <label for="field-email">E-mail:*</label>
+              <input type="email" id="field-email" name="email" placeholder="kuklachev@gmail.com" required>
+            </li>
+            <li class="selection-contact__item">
+              <label for="field-tel">Телефон:*</label>
+              <input type="tel" id="field-tel" name="tel" pattern="[0-9]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="program-selection__comment comment">
+          <label class="comment__title form-subtitle" for="field-comment">Комментарий</label>
+          <textarea class="comment__textarea" id="field-comment" name="comment" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+        <fieldset class="program-selection__additionally additionally">
+          <legend class="additionally__title form-subtitle">Дополнительно</legend>
+          <ul class="additionally__list">
+            <li class="additionally__item">
+              <input type="checkbox" id="checkbox-sweetener" name="sweetener" checked>
+              <label for="checkbox-sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="additionally__item">
+              <input type="checkbox" id="checkbox-water" name="water">
+              <label for="checkbox-water">Питьевая вода</label>
+            </li>
+            <li class="additionally__item">
+              <input type="checkbox" id="checkbox-milk" name="milk">
+              <label for="checkbox-milk">Молоко</label>
+            </li>
+            <li class="additionally__item">
+              <input type="checkbox" id="checkbox-vitamins" name="vitamins">
+              <label for="checkbox-vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="program-selection__button button button--grey" type="submit">Отправить заявку</button>
+        <p class="program-selection__footnote">* — Обязательные поля</p>
+      </form>
+      <section class="contacts">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <b class="contacts__cooperation">Приглашаем  к сотрудничеству  дилеров!</b>
+        <p class="conatcts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+        <img class="contacts__map" src="http://placehold.it/320x400" width="320" height="400" alt="Мы на карте">
+      </section>
     </main>
 
     <footer class="page-footer">
