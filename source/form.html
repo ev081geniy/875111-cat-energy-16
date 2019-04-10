@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Energy Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Cat Energy">
-        <img class="page-header__logo-name" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+        <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="300" height="59" alt="Логотип Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
@@ -28,93 +28,94 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <h1 class="visually-hidden">Страница подбора программы питания</h1>
       <form class="program-selection" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="program-selection__general selection-general">
-          <ul class="selection-general__list">
-            <li class="selection-general__item">
-              <label for="field-name">Имя:*</label>
-              <input type="text" id="field-name" name="cat-name" placeholder="Барсик" required>
+        <h2 class="program-selection__title section-title">Подбор программы</h2>
+        <p class="program-selection__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <fieldset class="program-selection__general form-field">
+          <ul class="form-field__list">
+            <li class="form-field__item">
+              <label class="form-field__label" for="field-name">Имя:*</label>
+              <input class="form-field__input-text" type="text" id="field-name" name="cat-name" placeholder="Барсик" required>
             </li>
-            <li class="selection-general__item">
-              <label for="field-weight">Вес (кг):*</label>
-              <input type="text" id="field-weight" name="cat-weight" placeholder="7" required>
+            <li class="form-field__item">
+              <label class="form-field__label" for="field-weight">Вес (кг):*</label>
+              <input class="form-field__input-text" type="number" min="1" max="20" id="field-weight" name="cat-weight" placeholder="7" required>
             </li>
-            <li class="selection-general__item">
-              <label for="field-age">Возраст (лет):</label>
-              <input type="text" id="field-age" name="cat-age" placeholder="7">
+            <li class="form-field__item">
+              <label class="form-field__label" for="field-age">Возраст (лет):</label>
+              <input class="form-field__input-text" type="number" min="1" max="30" id="field-age" name="cat-age" placeholder="7">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program-selection__program-type program-type">
-          <ul class="program-type__list">
-            <li class="program-type__item">
+        <fieldset class="program-selection__program-type form-field">
+          <ul class="form-field__list">
+            <li class="form-field__item">
               <input type="radio" id="radio-losing" name="program-type" value="losing" checked>
-              <label for="radio-losing">Похудение</label>
+              <label class="form-field__label" for="radio-losing">Похудение</label>
             </li>
-            <li class="program-type__item">
+            <li class="form-field__item">
               <input type="radio" id="radio-qaining" name="program-type" value="gaining">
-              <label for="radio-qaining">Набор массы</label>
+              <label class="form-field__label" for="radio-qaining">Набор массы</label>
             </li>
-            <li class="program-type__item">
+            <li class="form-field__item">
               <input type="radio" id="radio-advice" name="program-type" value="advice">
-              <label for="radio-advice">Не знаю (Нужен ваш совет)</label>
+              <label class="form-field__label" for="radio-advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program-selection__contact selection-contact">
-          <legend class="selection-contact__title form-subtitle">Контактные данные (владельца кота)</legend>
-          <ul class="selection-contact__list">
-            <li class="selection-contact__item">
-              <label for="field-email">E-mail:*</label>
-              <input type="email" id="field-email" name="email" placeholder="kuklachev@gmail.com" required>
+        <fieldset class="program-selection__contact form-field">
+          <legend class="form-field__title section-subtitle">Контактные данные (владельца кота)</legend>
+          <ul class="form-field__list">
+            <li class="form-field__item">
+              <label class="form-field__label" for="field-email">E-mail:*</label>
+              <input class="form-field__input-text" type="email" id="field-email" name="email" placeholder="kuklachev@gmail.com" required>
             </li>
-            <li class="selection-contact__item">
-              <label for="field-tel">Телефон:*</label>
-              <input type="tel" id="field-tel" name="tel" pattern="[0-9]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90" required>
+            <li class="form-field__item">
+              <label class="form-field__label" for="field-tel">Телефон:*</label>
+              <input class="form-field__input-text" type="tel" id="field-tel" name="tel" pattern="[0-9]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
-        <div class="program-selection__comment comment">
-          <label class="comment__title form-subtitle" for="field-comment">Комментарий</label>
-          <textarea class="comment__textarea" id="field-comment" name="comment" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="program-selection__comment form-field">
+          <label class="form-field__title section-subtitle" for="field-comment">Комментарий</label>
+          <textarea class="form-field__textarea" id="field-comment" name="comment" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <fieldset class="program-selection__additionally additionally">
-          <legend class="additionally__title form-subtitle">Дополнительно</legend>
-          <ul class="additionally__list">
-            <li class="additionally__item">
+        <fieldset class="program-selection__additionally form-field">
+          <legend class="form-field__title section-subtitle">Дополнительно</legend>
+          <ul class="form-field__list">
+            <li class="form-field__item">
               <input type="checkbox" id="checkbox-sweetener" name="sweetener" checked>
-              <label for="checkbox-sweetener">Сахарозаменитель</label>
+              <label class="form-field__label" for="checkbox-sweetener">Сахарозаменитель</label>
             </li>
-            <li class="additionally__item">
+            <li class="form-field__item">
               <input type="checkbox" id="checkbox-water" name="water">
-              <label for="checkbox-water">Питьевая вода</label>
+              <label class="form-field__label" for="checkbox-water">Питьевая вода</label>
             </li>
-            <li class="additionally__item">
+            <li class="form-field__item">
               <input type="checkbox" id="checkbox-milk" name="milk">
-              <label for="checkbox-milk">Молоко</label>
+              <label class="form-field__label" for="checkbox-milk">Молоко</label>
             </li>
-            <li class="additionally__item">
+            <li class="form-field__item">
               <input type="checkbox" id="checkbox-vitamins" name="vitamins">
-              <label for="checkbox-vitamins">Витамины</label>
+              <label class="form-field__label" for="checkbox-vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
         <button class="program-selection__button button button--grey" type="submit">Отправить заявку</button>
         <p class="program-selection__footnote">* — Обязательные поля</p>
       </form>
-      <section class="contacts">
+      <section class="contacts contacts--bg-grey">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <b class="contacts__cooperation">Приглашаем  к сотрудничеству  дилеров!</b>
-        <p class="conatcts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
-        <img class="contacts__map" src="http://placehold.it/320x400" width="320" height="400" alt="Мы на карте">
+        <p class="contacts__cooperation">Приглашаем  к сотрудничеству  дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+        <img class="contacts__map" src="../img/bg-map-mobile@1x.png" width="320" height="400" alt="Мы на карте">
       </section>
     </main>
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+        <img class="page-footer__logo-image" src="../img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -132,7 +133,7 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__title">HTML Academy</span>
-          <img class="copyright__logo-name" src=" http://placehold.it/27x34"  width="27" height="34" alt="Логотип HTML Academy">
+          <img class="copyright__logo-name" src="../img/htmlacademy.svg"  width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
