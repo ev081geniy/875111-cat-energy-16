@@ -1,0 +1,29 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  padding: 20px 0;
+
+  text-align: center;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-nav__link {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

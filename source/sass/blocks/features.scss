@@ -1,0 +1,25 @@
+.features {
+  padding: 0 20px;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  margin-bottom: 20px;
+}
+
+.features__desc {
+  padding-left: 20px;
+
+  font-family: "Ariel", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+}

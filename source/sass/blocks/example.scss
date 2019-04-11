@@ -1,0 +1,50 @@
+.example {
+  padding: 0 20px;
+
+  background-color: #f2f2f2;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.example__desc {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: "Ariel", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+}
+
+.example__list {
+  @include list-reset;
+
+  margin-bottom: 20px;
+}
+
+.example__result {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__result-value {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__cost {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

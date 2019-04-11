@@ -1,0 +1,25 @@
+.add-catalog {
+  padding: 0 20px;
+}
+
+.add-catalog__list {
+  @include list-reset;
+}
+
+.add-catalog__bonus {
+  padding: 188px 56px 40px;
+
+  text-align: center;
+
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #68b738;
+}
+
+.add-catalog__bonus-desc {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
