@@ -10,7 +10,7 @@
   margin-bottom: 20px;
   padding: 38px 20px 20px;
 
-  background-color: #f2f2f2;
+  background-color: $bg-grey;
 }
 
 .program__title {
@@ -20,7 +20,7 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  color: #111111;
+  color: $fc-black;
   text-transform: uppercase;
 }
 
@@ -29,16 +29,16 @@
   margin-bottom: 20px;
   padding-bottom: 22px;
 
-  font-family: "Ariel", sans-serif;
+  font-family: $font-second;
   font-size: 14px;
   line-height: 18px;
-  color: #111111;
+  color: $fc-grey;
 }
 
 .program__link {
   font-size: 16px;
   line-height: 16px;
-  color: #111111;
+  color: $fc-black;
   text-decoration: none;
   text-transform: uppercase;
 }

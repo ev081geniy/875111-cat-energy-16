@@ -14,12 +14,12 @@
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #68b738;
+  background-color: $bg-green;
 }
 
 .add-catalog__bonus-desc {
-  font-family: "Arial", sans-serif;
+  font-family: $font-second;
   font-size: 14px;
   line-height: 20px;
-  color: #ffffff;
+  color: $fc-white;
 }

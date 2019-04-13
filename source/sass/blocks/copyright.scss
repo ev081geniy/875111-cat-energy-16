@@ -1,8 +1,8 @@
 .copyright__logo {
-  font-family: "Ariel", sans-serif;
+  font-family: $font-second;
   font-size: 16px;
   line-height: 16px;
-  color: #444444;
+  color: $fc-grey;
   text-decoration: none;
 
   &:active {

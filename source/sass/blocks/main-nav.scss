@@ -14,16 +14,16 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
-  color: #111111;
+  color: $fc-black;
   text-decoration: none;
   text-transform: uppercase;
 
   &:hover,
   &:focus {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba($fc-black, 0.6);
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba($fc-black, 0.3);
   }
 }
