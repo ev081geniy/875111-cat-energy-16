@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Energy - Интернет-магазин Здорового питания для вашего кота</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="300" height="59" alt="Логотип Cat Energy">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -88,8 +90,10 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <p class="contacts__cooperation">Приглашаем  к сотрудничеству  дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+        <div class="contacts__info-block">
+          <p class="contacts__cooperation">Приглашаем  к сотрудничеству  дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+        </div>
         <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Мы на карте">
       </section>
     </main>

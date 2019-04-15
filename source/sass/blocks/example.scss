@@ -1,7 +1,11 @@
 .example {
+  width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
 
   background-color: $bg-grey;
+
+  outline: 1px solid blue;
 }
 
 .example__title {
@@ -16,7 +20,7 @@
   font-family: $font-second;
   font-size: 14px;
   line-height: 18px;
-  color: $fc-white;
+  color: $fc-black;
 }
 
 .example__list {
@@ -47,4 +51,18 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }

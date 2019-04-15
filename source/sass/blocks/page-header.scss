@@ -1,0 +1,39 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+
+    width: 708px;
+  }
+
+  .page-header__logo {
+    width: 192px;
+    min-height: 58px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1220px;
+    padding-top: 54px;
+  }
+
+  .page-header__logo {
+    width: 245px;
+  }
+}

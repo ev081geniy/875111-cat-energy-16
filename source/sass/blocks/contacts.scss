@@ -1,12 +1,22 @@
 .contacts {
-  padding: 30px 0;
+  width: 320px;
+  margin: 0 auto;
 
   &--bg-grey {
     background-color: $bg-grey;
   }
+
+  outline: 1px solid blue;
+}
+
+.contacts__info-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .contacts__cooperation {
+  width: 140px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -14,7 +24,26 @@
 
 .contacts__address {
   font-family: $font-second;
+  width: 140px;
   font-size: 14px;
   line-height: 20px;
   color: $fc-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+  }
+
+  .contacts__info-block {
+    width: 628px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1440px;
+  }
 }
