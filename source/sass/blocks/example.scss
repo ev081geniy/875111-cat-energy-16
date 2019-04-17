@@ -1,7 +1,7 @@
 .example {
   width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
 
   background-color: $bg-grey;
 
@@ -10,38 +10,56 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .example__desc {
   margin: 0;
   margin-bottom: 25px;
+  padding-right: 5px;
 
   font-family: $font-second;
-  font-size: 14px;
-  line-height: 18px;
-  color: $fc-black;
 }
 
 .example__list {
   @include list-reset;
 
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+}
+
+.example__item {
+  width: 88px;
+  padding: 13px 17px 8px;
+
+  text-align: center;
+
+  border: 1px solid #d9d9d9;
 }
 
 .example__result {
   margin: 0;
+  margin-bottom: -25px;
 
-  font-family: $font-second;
-  font-size: 12px;
-  line-height: 12px;
-}
-
-.example__result-value {
   font-family: $font-basic;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.example__result-value {
+  display: block;
+  margin-top: 10px;
+  padding: 0 4px;
+
+  font-family: $font-second;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+
+  background-color: $bg-grey;
 }
 
 .example__cost {
@@ -58,11 +76,95 @@
     width: 708px;
     padding: 0 30px;
   }
+
+  .example__title {
+    margin-bottom: 65px;
+  }
+
+  .example__desc {
+    margin-bottom: 55px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__list {
+    width: 366px;
+  }
+
+  .example__item {
+    width: 132px;
+    padding: 14px 14px 0;
+  }
+
+  .example__result {
+    margin-bottom: -5px;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__result-value {
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__cost {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__cost span {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example {
+    display: flex;
+
     width: 1220px;
     padding: 0 110px;
+  }
+
+  .example__wrapper {
+    width: 440px;
+  }
+
+  .example__title {
+    margin-bottom: 145px;
+  }
+
+  .example__desc {
+    margin-bottom: 70px;
+  }
+
+  .example__info {
+    flex-direction: column;
+  }
+
+  .example__list {
+    margin-bottom: 60px;
+  }
+
+  .example__cost {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 325px;
+  }
+
+  .example__cost span {
+    margin: 0;
   }
 }

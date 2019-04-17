@@ -30,10 +30,11 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1220px;
-    padding-top: 54px;
+    padding-top: 55px;
   }
 
   .page-header__logo {
     width: 245px;
+    min-height: 59px;
   }
 }

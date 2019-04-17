@@ -77,12 +77,11 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    align-self: flex-start;
     width: 610px;
   }
 
   .main-nav__link {
     font-size: 20px;
-    color: red;
+    color: $fc-white;
   }
 }
