@@ -1,30 +1,32 @@
 .contacts {
   width: 320px;
   margin: 0 auto;
-
-  &--bg-grey {
-    background-color: $bg-grey;
-  }
-
-  outline: 1px solid blue;
 }
 
 .contacts__info-block {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 30px 20px 25px;
+
+  &--bg-grey {
+    background-color: $bg-grey;
+  }
 }
 
 .contacts__cooperation {
   width: 140px;
+  margin: 0;
+
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .contacts__address {
-  font-family: $font-second;
   width: 140px;
+  margin: 0;
+
+  font-family: $font-second;
   font-size: 14px;
   line-height: 20px;
   color: $fc-grey;
@@ -39,6 +41,25 @@
     width: 628px;
     margin: 0 auto;
     padding: 40px;
+  }
+
+  .contacts__cooperation {
+    width: 160px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    width: 160px;
+
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__address span {
+    display: inline-block;
+    padding-top: 20px;
   }
 }
 

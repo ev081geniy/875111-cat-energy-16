@@ -1,5 +1,6 @@
 .add-product {
-  padding: 13px 0 17px;
+  border-top: 1px solid #cdcdcd;
+  padding: 13px 0 16px;
 }
 
 .add-product__title {
@@ -19,4 +20,54 @@
   font-size: 14px;
   line-height: 14px;
   color: $fc-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .add-product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 38px;
+  }
+
+  .add-product__title {
+    width: 286px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-product__info {
+    margin-bottom: 20px;
+
+    width: 286px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .add-product__button {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-product {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 16px;
+  }
+
+  .add-product__title {
+    width: 245px;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .add-product__info {
+    width: 285px;
+    margin: 0 40px;
+  }
+
+  .add-product__button {
+    width: 245px;
+  }
 }
