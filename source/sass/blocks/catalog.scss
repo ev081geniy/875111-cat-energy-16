@@ -11,11 +11,9 @@
 }
 
 .catalog__list {
-  border: 1px solid #ededed;
-}
-
-.catalog__list {
   @include list-reset;
+
+  border: 1px solid #ededed;
 }
 
 @media (min-width: $tablet-width) {
