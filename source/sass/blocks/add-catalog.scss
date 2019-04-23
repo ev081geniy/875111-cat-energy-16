@@ -19,9 +19,7 @@
 }
 
 .add-catalog__bonus {
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../../img/gift-photo-mobile@1x.jpg") no-repeat 50%;
   background-color: $bg-green;
   background-size: cover;
 }

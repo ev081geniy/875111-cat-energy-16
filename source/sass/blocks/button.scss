@@ -2,6 +2,7 @@
   display: block;
   padding: 10px 0;
 
+  font-family: $font-main;
   font-size: 16px;
   line-height: 20px;
   color: $fc-white;
@@ -33,5 +34,13 @@
 
   &:active {
     color: rgba($fc-grey, 0.3%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--big {
+    padding: 16px 0;
+
+    font-size: 20px;
   }
 }

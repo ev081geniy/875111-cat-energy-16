@@ -1,11 +1,12 @@
 .example {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-  padding: 20px;
 
   background-color: $bg-grey;
+}
 
-  outline: 1px solid blue;
+.example__wrapper {
+  padding: 20px;
 }
 
 .example__title {
@@ -43,7 +44,7 @@
   margin: 0;
   margin-bottom: -25px;
 
-  font-family: $font-basic;
+  font-family: $font-main;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -71,10 +72,64 @@
   text-transform: uppercase;
 }
 
+.example__gallery {
+  text-align: center;
+}
+
+.example__image--after {
+  display: none;
+}
+
+.example__switch {
+  padding: 39px 0;
+}
+
+.example__button {
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 20px;
+
+  background: transparent;
+
+  border: 0;
+}
+
+.example__range {
+  position: relative;
+
+  display: inline-block;
+  width: 82px;
+  height: 12px;
+
+  background-color: $bg-white;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+    left: 5px;
+
+    width: 35px;
+    height: 6px;
+
+    background-color: $bg-green;
+
+    border-radius: 3px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .example {
     width: 708px;
+  }
+
+  .example__wrapper {
     padding: 0 30px;
+    background-color: $bg-white;
   }
 
   .example__title {
@@ -114,6 +169,8 @@
 
     font-size: 14px;
     line-height: 14px;
+
+    background-color: $bg-white;
   }
 
   .example__cost {
