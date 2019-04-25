@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Energy Подбор программы</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="300" height="59" alt="Логотип Cat Energy">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
@@ -20,8 +22,8 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -32,38 +34,40 @@
       <form class="program-selection" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="program-selection__title section-title">Подбор программы</h2>
         <p class="program-selection__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <fieldset class="program-selection__general form-field">
-          <ul class="form-field__list">
-            <li class="form-field__item">
-              <label class="form-field__label" for="field-name">Имя:*</label>
-              <input class="form-field__input-text" type="text" id="field-name" name="cat-name" placeholder="Барсик" required>
-            </li>
-            <li class="form-field__item">
-              <label class="form-field__label" for="field-weight">Вес (кг):*</label>
-              <input class="form-field__input-text" type="number" min="1" max="20" id="field-weight" name="cat-weight" placeholder="7" required>
-            </li>
-            <li class="form-field__item">
-              <label class="form-field__label" for="field-age">Возраст (лет):</label>
-              <input class="form-field__input-text" type="number" min="1" max="30" id="field-age" name="cat-age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="program-selection__program-type form-field">
-          <ul class="form-field__list">
-            <li class="form-field__item">
-              <input type="radio" id="radio-losing" name="program-type" value="losing" checked>
-              <label class="form-field__label" for="radio-losing">Похудение</label>
-            </li>
-            <li class="form-field__item">
-              <input type="radio" id="radio-qaining" name="program-type" value="gaining">
-              <label class="form-field__label" for="radio-qaining">Набор массы</label>
-            </li>
-            <li class="form-field__item">
-              <input type="radio" id="radio-advice" name="program-type" value="advice">
-              <label class="form-field__label" for="radio-advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="program-selection__wrapper">
+          <fieldset class="program-selection__general form-field">
+            <ul class="form-field__list">
+              <li class="form-field__item">
+                <label class="form-field__label" for="field-name">Имя:*</label>
+                <input class="form-field__input-text" type="text" id="field-name" name="cat-name" placeholder="Барсик" required>
+              </li>
+              <li class="form-field__item">
+                <label class="form-field__label" for="field-weight">Вес (кг):*</label>
+                <input class="form-field__input-text" type="number" min="1" max="20" id="field-weight" name="cat-weight" placeholder="7" required>
+              </li>
+              <li class="form-field__item">
+                <label class="form-field__label" for="field-age">Возраст (лет):</label>
+                <input class="form-field__input-text" type="number" min="1" max="30" id="field-age" name="cat-age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program-selection__program-type form-field">
+            <ul class="form-field__list">
+              <li class="form-field__item">
+                <input type="radio" id="radio-losing" name="program-type" value="losing" checked>
+                <label class="form-field__label" for="radio-losing">Похудение</label>
+              </li>
+              <li class="form-field__item">
+                <input type="radio" id="radio-qaining" name="program-type" value="gaining">
+                <label class="form-field__label" for="radio-qaining">Набор массы</label>
+              </li>
+              <li class="form-field__item">
+                <input type="radio" id="radio-advice" name="program-type" value="advice">
+                <label class="form-field__label" for="radio-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="program-selection__contact form-field">
           <legend class="form-field__title section-subtitle">Контактные данные (владельца кота)</legend>
           <ul class="form-field__list">
@@ -102,13 +106,17 @@
             </li>
           </ul>
         </fieldset>
-        <button class="program-selection__button button button--grey" type="submit">Отправить заявку</button>
-        <p class="program-selection__footnote">* — Обязательные поля</p>
+        <div class="program-selection__submit">
+          <button class="program-selection__button button button--big" type="submit">Отправить заявку</button>
+          <p class="program-selection__footnote">* — Обязательные поля</p>
+        </div>
       </form>
       <section class="contacts contacts--bg-grey">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <p class="contacts__cooperation">Приглашаем  к сотрудничеству  дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+        <div class="contacts__info-block contacts__info-block--bg-grey">
+          <p class="contacts__cooperation">Приглашаем <br> к сотрудничеству  дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
         <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Мы на карте">
       </section>
     </main>
@@ -123,7 +131,20 @@
             <a class="social__link social__link--vkontakte" href="#" aria-label="Наша страница ВКонтакте"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#" aria-label="Наша страница в Instagram"></a>
+            <a class="social__link social__link--instagram" href="#" aria-label="Наша страница в Instagram">
+              <svg version="1.1" id="Layer_1" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #231F20;
+                  }
+                </style>
+                <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
+                L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
+                <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
+                C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z"/>
+                <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Наша страница в Facebook"></a>

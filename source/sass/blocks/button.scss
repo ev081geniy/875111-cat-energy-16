@@ -1,37 +1,46 @@
 .button {
   display: block;
-  padding: 11px 0;
+  padding: 10px 0;
 
+  font-family: $font-main;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $fc-white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
-  background-color: #68b738;
+  background-color: $bg-green;
   border: 0;
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $bg-green-dark;
   }
 
   &:active {
-    color: rgba(#ffffff, 0.3%);
+    color: rgba($fc-white, 0.3%);
   }
 }
 
 .button--grey {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $fc-grey;
+  background-color: $bg-grey;
 
   &:hover,
   &:focus {
-    background-color: #ebebeb;
+    background-color: $bg-grey-dark;
   }
 
   &:active {
-    color: rgba(#444444, 0.3%);
+    color: rgba($fc-grey, 0.3%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--big {
+    padding: 16px 0;
+
+    font-size: 20px;
   }
 }

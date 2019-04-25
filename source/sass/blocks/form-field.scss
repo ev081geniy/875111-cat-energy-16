@@ -1,4 +1,5 @@
 .form-field {
+  margin: 0;
   padding: 0;
   border: 0;
 }
@@ -10,13 +11,18 @@
 
 .form-field__list {
   @include list-reset;
+
+  padding: 16px 0;
 }
 
 .form-field__item {
-  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
 }
 
 .form-field__label {
+  flex-shrink: 0;
   margin-right: 15px;
 
   font-size: 16px;
@@ -25,11 +31,13 @@
 }
 
 .form-field__input-text {
+  width: 100%;
   padding: 13px 15px 12px;
 
+  font-family: $font-main;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $fc-grey;
   text-transform: uppercase;
 
   border: 1px solid rgba(#cdcdcd, 0.5%);
@@ -46,10 +54,19 @@
 }
 
 .form-field__textarea {
-  padding: 15px;
+  width: 100%;
+  padding: 14px;
+  resize: none;
 
+  font-family: $font-main;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $fc-grey;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-field__label {
+    font-size: 20px;
+  }
 }

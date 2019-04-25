@@ -1,11 +1,21 @@
 .copyright__logo {
-  font-family: "Ariel", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: $font-second;
   font-size: 16px;
   line-height: 16px;
-  color: #444444;
+  color: $fc-grey;
   text-decoration: none;
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
   }
 }
