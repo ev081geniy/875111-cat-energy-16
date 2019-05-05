@@ -14,8 +14,58 @@
 }
 
 .features__item {
+  position: relative;
+
   margin-bottom: 20px;
   padding-left: 80px;
+}
+
+.features__item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $bg-green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px 50px;
+}
+
+.features__item--useful::before {
+  background-image: url("../../img/advantage-leaf@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-leaf@2x.png");
+  }
+}
+
+.features__item--easy::before {
+  background-image: url("../../img/advantage-powder@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-powder@2x.png");
+  }
+}
+
+.features__item--less::before {
+  background-image: url("../../img/advantage-dining@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-dining@2x.png");
+  }
+}
+
+.features__item--fast::before {
+  background-image: url("../../img/advantage-clock@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-clock@2x.png");
+  }
 }
 
 .features__desc {
@@ -41,6 +91,41 @@
     width: 246px;
     margin: 35px 30px 55px;
     padding: 112px 78px 45px 0;
+  }
+
+  .features__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .features__item::after {
+    content: "";
+
+    position: absolute;
+    top: -38px;
+    left: 115px;
+
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+
+    z-index: -1;
+  }
+
+  .features__item--useful::after {
+    content: "1";
+  }
+
+  .features__item--easy::after {
+    content: "2";
+  }
+
+  .features__item--less::after {
+    content: "3";
+  }
+
+  .features__item--fast::after {
+    content: "4";
   }
 
   .features__title {
@@ -71,5 +156,10 @@
     width: 245px;
     margin: 0 40px;
     padding: 110px 0 50px;
+  }
+
+  .features__item::after {
+    left: none;
+    right: 0;
   }
 }
