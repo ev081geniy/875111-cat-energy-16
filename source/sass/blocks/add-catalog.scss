@@ -19,6 +19,8 @@
 }
 
 .add-catalog__bonus {
+  position: relative;
+
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $bg-green;
@@ -27,6 +29,21 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/gift-photo-mobile@2x.jpg");
   }
+}
+
+.add-catalog__bonus::before {
+  content: "";
+
+  position: absolute;
+  top: 65px;
+  left: 113px;
+
+  width: 55px;
+  height: 60px;
+
+  background-image: url("../../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .add-catalog__bonus-desc {
@@ -67,6 +84,10 @@
     }
   }
 
+  .add-catalog__bonus::before {
+    left: 91px;
+  }
+
   .add-catalog__bonus-desc {
     padding: 73px 122px 68px 424px;
 
@@ -100,6 +121,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/gift-photo-desktop@2x.jpg");
     }
+  }
+
+  .add-catalog__bonus::before {
+    left: 96px;
   }
 
   .add-catalog__bonus-desc {

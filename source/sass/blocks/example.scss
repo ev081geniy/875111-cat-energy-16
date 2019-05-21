@@ -6,12 +6,13 @@
 }
 
 .example__wrapper {
-  padding: 20px;
+  padding: 18px 20px;
+  margin-bottom: 15px;
 }
 
 .example__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .example__desc {
@@ -81,13 +82,14 @@
 }
 
 .example__switch {
-  padding: 39px 0;
+  padding: 30px 0;
 }
 
 .example__button {
   font-family: $font-main;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
 
   background: transparent;
 

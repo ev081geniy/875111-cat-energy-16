@@ -19,8 +19,15 @@
   }
 
   &:active {
-    color: rgba($fc-white, 0.3%);
+    color: rgba($fc-white, 0.3);
   }
+}
+
+.button--big {
+  padding: 11px 0;
+
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .button--grey {
@@ -33,7 +40,7 @@
   }
 
   &:active {
-    color: rgba($fc-grey, 0.3%);
+    color: rgba($fc-grey, 0.3);
   }
 }
 

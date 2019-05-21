@@ -76,8 +76,8 @@
 
 .program__desc {
   margin: 0;
-  margin-bottom: 20px;
-  padding-bottom: 22px;
+  margin-bottom: 19px;
+  padding-bottom: 21px;
 
   font-family: $font-second;
   font-size: 14px;
@@ -87,14 +87,45 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.program__link::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: -24px;
+
+  width: 24px;
+  height: 11px;
+
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+
+  transform: translateY(-50%);
+}
+
 .program__link {
-  display: block;
+  position: relative;
+
+  padding-right: 12px;
 
   font-size: 16px;
   line-height: 16px;
   color: $fc-black;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover::after,
+  &:focus::after {
+    right: -33px;
+
+    width: 33px;
+
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -159,6 +190,8 @@
   }
 
   .program__link {
+    padding-right: 22px;
+
     font-size: 20px;
     line-height: 20px;
   }

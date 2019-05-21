@@ -1,11 +1,13 @@
 .page-footer {
+  background-color: $bg-grey;
+}
+
+.page-footer__container {
   width: 280px;
   margin: 0 auto;
   padding: 40px 20px 22px;
 
   text-align: center;
-
-  background-color: $bg-grey;
 }
 
 .page-footer__logo {
@@ -18,7 +20,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,7 +40,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__container {
     width: 1220px;
     padding: 58px 110px;
   }
