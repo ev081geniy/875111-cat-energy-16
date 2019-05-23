@@ -13,6 +13,15 @@
 .page-footer__logo {
   display: block;
   margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -32,6 +41,8 @@
   .page-footer__logo {
     width: 162px;
     margin: 0;
+
+    text-align: left;
   }
 
   .page-footer__social {

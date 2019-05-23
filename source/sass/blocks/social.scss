@@ -1,5 +1,5 @@
 .social {
-  padding: 22px 0 21px;
+  padding: 20px 0;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
@@ -7,6 +7,30 @@
 
 .social__list {
   @include list-reset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  width: 30px;
+  margin: 0 12px;
+
+  text-align: center;
+}
+
+.social__link {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $bg-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -14,5 +38,24 @@
     padding: 0;
 
     border: 0;
+  }
+
+  .social__item {
+    margin: 0 10px;
+  }
+
+  .social__link--vkontakte svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram svg{
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook svg {
+    width: 14px;
+    height: 28px;
   }
 }
