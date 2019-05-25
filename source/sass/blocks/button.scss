@@ -23,7 +23,7 @@
   }
 }
 
-.button--big {
+.button--promo {
   padding: 11px 0;
 
   font-size: 14px;
@@ -45,9 +45,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .button--big {
+  .button--promo {
     padding: 16px 0;
 
     font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button--form {
+    padding: 16px 0;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }

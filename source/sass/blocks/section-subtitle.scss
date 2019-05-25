@@ -1,4 +1,7 @@
 .section-subtitle {
+  padding: 4px 0 15px;
+  padding-right: 20px;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -6,6 +9,8 @@
 
 @media (min-width: $tablet-width) {
   .section-subtitle {
+    padding: 23px 0 57px;
+
     font-size: 36px;
     line-height: 36px;
   }
