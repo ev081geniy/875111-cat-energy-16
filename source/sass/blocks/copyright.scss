@@ -9,12 +9,12 @@
   color: $fc-grey;
   text-decoration: none;
 
-  path {
+  svg {
     fill: #666666;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: $bg-green;
   }
 

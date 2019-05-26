@@ -12,7 +12,7 @@
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 
   &:hover,
   &:focus {
@@ -25,7 +25,7 @@
 }
 
 .page-footer__social {
-  margin-bottom: 22px;
+  margin: 0 0 22px;
 }
 
 @media (min-width: $tablet-width) {

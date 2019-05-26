@@ -1,7 +1,6 @@
 .promo {
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
   padding: 27px 20px 0;
 
   text-align: center;
@@ -16,8 +15,7 @@
 }
 
 .promo__title {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 
   font-size: 36px;
   line-height: 36px;
@@ -27,8 +25,7 @@
 }
 
 .promo__slogan {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
   font-size: 14px;
   line-height: 14px;
   color: $fc-white;
@@ -39,7 +36,7 @@
   display: block;
   width: 280px;
   height: auto;
-  margin-bottom: 3px;
+  margin: 0 0 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,13 +48,13 @@
     align-items: flex-start;
     width: 486px;
     padding: 0 132px 530px 90px;
-    margin-bottom: 0;
+    margin: 0 auto 0;
 
     background: none;
   }
 
   .promo__title {
-    margin-bottom: 40px;
+    margin: 0 0 40px;
 
     font-size: 60px;
     line-height: 60px;
@@ -66,7 +63,7 @@
   }
 
   .promo__slogan {
-    margin-bottom: 50px;
+    margin: 0 0 50px;
 
     font-size: 20px;
     line-height: 20px;
@@ -91,32 +88,26 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    width: 1220px;
-    margin-bottom: 80px;
-    padding: 0 110px 189px;
+    width: 1140px;
+    margin: 0 auto 80px;
+    padding: 0 40px 187px 120px;
   }
 
   .promo__title {
     width: 530px;
-    margin-bottom: 42px;
-    padding-top: 50px;
-    padding-left: 80px;
+    margin: 0 0 42px;
+    padding: 80px 0 0;
   }
 
   .promo__slogan {
-    margin-bottom: 52px;
-    padding-left: 80px;
+    margin: 0 0 52px;
   }
 
   .promo__img {
     top: 0;
-    left: 560px;
+    left: 490px;
 
     width: 552px;
     height: 499px;
-  }
-
-  .promo__button {
-    margin-left: 80px;
   }
 }

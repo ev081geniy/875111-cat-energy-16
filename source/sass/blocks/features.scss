@@ -1,12 +1,10 @@
 .features {
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 42px;
+  margin: 0 auto 42px;
 }
 
 .features__title {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 }
 
 .features__list {
@@ -16,8 +14,8 @@
 .features__item {
   position: relative;
 
-  margin-bottom: 20px;
-  padding-left: 80px;
+  margin: 0 0 20px;
+  padding: 0 0 0 80px;
 }
 
 .features__item::before {
@@ -78,8 +76,7 @@
 @media (min-width: $tablet-width) {
   .features {
     width: 768px;
-
-    border-bottom: 1px solid #d9d9d9;
+    margin: 0 auto 2px;
   }
 
   .features__list {
@@ -90,7 +87,7 @@
   .features__item {
     width: 246px;
     margin: 35px 30px 55px;
-    padding: 112px 78px 45px 0;
+    padding: 112px 78px 44px 0;
   }
 
   .features__item::before {
@@ -143,9 +140,7 @@
 @media (min-width: $desktop-width) {
   .features {
     width: 1300px;
-    margin-bottom: 75px;
-
-    border: none;
+    margin: 0 auto 21px;
   }
 
   .features__title {
