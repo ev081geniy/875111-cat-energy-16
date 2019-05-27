@@ -5,8 +5,8 @@
 .field-textarea__title {
   display: inline-block;
   max-width: 181px;
-
   margin: 0 0 20px;
+  padding: 4px 20px 0;
 
   background-color: #ffffff;
 
@@ -39,7 +39,14 @@
   text-transform: uppercase;
 
   border: 1px solid rgba(#cdcdcd, 0.5);
-  outline: none;
+
+  &::placeholder {
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 18px;
+    color: $fc-grey;
+    text-transform: uppercase;
+  }
 
   &:hover {
     border-color: rgba(#cdcdcd, 1);
@@ -54,10 +61,15 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .field-textarea__title {
     max-width: none;
-    margin: 0 0 19px 0;
+    margin: 0 0 76px;
+    padding: 23px 40px 0 0;
+
+    &:after {
+      top: 45px;
+      right: -40px;
+    }
   }
 
   .field-textarea__textarea {
@@ -67,9 +79,14 @@
     font-size: 20px;
     line-height: 30px;
 
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
     &:active,
     &:focus {
-      padding: 9px 16px;
+      padding: 9px 17px;
     }
   }
 }

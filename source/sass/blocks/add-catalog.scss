@@ -1,19 +1,18 @@
 .add-catalog {
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 35px;
+  margin: 0 auto 35px;
   padding: 0 20px;
 }
 
 .add-catalog__title {
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 33px;
+  padding: 27px 0 0;
 }
 
 .add-catalog__list {
   @include list-reset;
 
-  margin-bottom: 39px;
+  margin: 0 0 39px;
 
   border-bottom: 1px solid #cdcdcd;
 }
@@ -48,7 +47,7 @@
 
 .add-catalog__bonus-desc {
   margin: 0;
-  padding: 188px 60px 41px;
+  padding: 188px 59px 41px;
 
   font-family: $font-second;
   font-size: 16px;
@@ -59,18 +58,36 @@
 
 @media (min-width: $tablet-width) {
   .add-catalog {
+    position: relative;
+
     width: 708px;
-    margin-bottom: 76px;
+    margin:0 auto 76px;
     padding: 0 30px;
   }
 
   .add-catalog__title {
-    padding-left: 36px;
-    margin-bottom: 80px;
+    display: inline-block;
+    margin: 0 0 80px;
+    padding: 15px 36px 0 36px;
+
+    background-color: $bg-white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 37px;
+      right: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 3px;
+
+      background: $bg-green;
+    }
   }
 
   .add-catalog__list {
-    margin-bottom: 69px;
+    margin: 0 0 69px;
 
     border: 1px solid #cdcdcd;
     border-top: 0;
@@ -97,16 +114,27 @@
 
 @media (min-width: $desktop-width) {
   .add-catalog {
-    width: 1300px;
+    width: 1220px;
+    padding: 0 40px;
+  }
+
+  .add-catalog__title {
+    margin: 0 0 80px -40px;
+    padding: 54px 40px 0;
+
+    &::after {
+      top: 76px;
+    }
   }
 
   .add-catalog__wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
   .add-catalog__list {
     width: 895px;
-    margin: 0 40px;
+    margin: 0;
 
     border: 0;
     border-bottom: 1px solid #cdcdcd;
@@ -114,7 +142,6 @@
 
   .add-catalog__bonus {
     width: 245px;
-    margin: 0 40px;
 
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
 

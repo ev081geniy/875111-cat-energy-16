@@ -8,6 +8,7 @@
 .field-input__title {
   max-width: 181px;
   margin: 0 0 20px;
+  padding: 4px 20px 15px 0;
 
   background-color: #ffffff;
 
@@ -83,7 +84,14 @@
   text-transform: uppercase;
 
   border: 1px solid rgba(#cdcdcd, 0.5);
-  outline: none;
+
+  &::placeholder {
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 18px;
+    color: $fc-grey;
+    text-transform: uppercase;
+  }
 
   &:hover {
     border-color: rgba(#cdcdcd, 1);
@@ -106,7 +114,13 @@
 @media (min-width: $tablet-width) {
   .field-input__title {
     max-width: none;
-    margin: 0 0 19px;
+    margin: 0 0 76px;
+    padding: 23px 40px 0 0;
+
+    &::after {
+      top: 45px;
+      right: -40px;
+    }
   }
 
   .field-input__item {
@@ -132,6 +146,11 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
 
     &:active,
     &:focus {

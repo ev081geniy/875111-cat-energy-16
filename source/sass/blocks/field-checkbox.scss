@@ -8,6 +8,7 @@
 .field-checkbox__title {
   max-width: 181px;
   margin: 0 0 22px;
+  padding: 4px 20px 15px 0;
 
   background-color: #ffffff;
 
@@ -87,7 +88,13 @@
 @media (min-width: $tablet-width) {
   .field-checkbox__title {
     max-width: none;
-    margin: 0;
+    margin: 0 0 57px;
+    padding: 23px 40px 0 0;
+
+    &:after {
+      top: 45px;
+      right: -40px;
+    }
   }
 
   .field-checkbox__list {
