@@ -9,6 +9,15 @@
   color: $fc-grey;
   text-decoration: none;
 
+  svg {
+    fill: #666666;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $bg-green;
+  }
+
   &:active {
     opacity: 0.3;
   }

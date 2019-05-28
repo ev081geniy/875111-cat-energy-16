@@ -1,18 +1,11 @@
 .catalog-more {
-  padding: 0 18px 24px;
+  padding: 80px 18px 24px;
 
   text-align: center;
 }
 
-.catalog-more__button-plus {
-  display: block;
-  margin-bottom: 21px;
-  padding-top: 26px;
-}
-
 .catalog-more__title {
-  margin: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
 
   font-size: 16px;
   line-height: 20px;
@@ -20,8 +13,7 @@
 }
 
 .catalog-more__text {
-  margin: 0;
-  margin-bottom: 22px;
+  margin: 0 0 21px;
 
   font-family: $font-second;
   font-size: 12px;
@@ -30,41 +22,53 @@
 }
 
 .catalog-more__button {
-  padding: 10px 0;
+  position: relative;
+}
+
+.catalog-more__button::before {
+  content: "";
+
+  position: absolute;
+  top: -118px;
+  left: 125px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-more {
     width: 248px;
-    padding: 0 37px 39px;
+    padding: 162px 37px 39px;
 
-    border: 1px solid #cdcdcd;
-  }
-
-  .catalog-more__button-plus {
-    padding-top: 55px;
-
-    margin-bottom: 45px;
-  }
-
-  .catalog-more__image {
-    width: 60px;
-    min-height: 60px;
+    border: 1px solid $bg-grey;
   }
 
   .catalog-more__title {
-    margin-bottom: 28px;
+    margin: 0 0 28px;
     padding: 0 55px;
 
     font-size: 20px;
   }
 
   .catalog-more__text {
-    margin-bottom: 85px;
+    margin: 0 0 84px;
     padding: 0 40px;
 
     font-size: 16px;
     line-height: normal;
+  }
+
+  .catalog-more__button::before {
+    width: 60px;
+    height: 60px;
+
+    top: -297px;
+    left: 94px;
   }
 }
 
@@ -79,5 +83,9 @@
 
   .catalog-more__text {
     padding: 0;
+  }
+
+  .catalog-more__button::before {
+    left: 55px;
   }
 }

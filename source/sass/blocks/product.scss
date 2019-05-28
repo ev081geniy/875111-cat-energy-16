@@ -1,7 +1,7 @@
 .product {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 18px 24px;
+  padding: 0 19px 24px;
 
   border-bottom: 1px solid #ededed;
 }
@@ -17,7 +17,7 @@
 
 .product__link-title {
   display: block;
-  padding: 22px 50px 10px 0;
+  padding: 22px 50px 12px 0;
 
   font-size: 16px;
   line-height: 20px;
@@ -27,17 +27,26 @@
 }
 
 .product__info {
-  display: flex;
-  flex-direction: column;
   width: 100%;
+
   font-family: $font-second;
   font-size: 12px;
   line-height: 16px;
+
+  border-collapse: collapse;
 }
 
-.product__info tr {
-  display: flex;
-  justify-content: space-between;
+.product__info td {
+  width: 50%;
+  padding: 0;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &:last-child {
+    text-align: right;
+  }
 }
 
 .product__button {
@@ -47,29 +56,28 @@
 @media (min-width: $tablet-width) {
   .product {
     flex-direction: column;
-    width: 248px;
-    padding: 40px 38px 40px;
+    padding: 0 0 40px;
 
     background-color: $bg-grey;
     border: 0;
   }
 
   .product__link-image {
-    margin-top: -80px;
+    display: flex;
+    align-items: flex-end;
+    width: 324px;
+    min-height: 208px;
+    margin: -83px 0 0;
   }
 
-  .product__image {
-    min-height: 171px;
-    background-color: red;
-  }
-
-  .product__wrapper {
-    width: 100%;
-    margin-bottom: 33px;
+  .product__wrapper,
+  .product__button {
+    width: 249px;
+    margin: 0 auto;
   }
 
   .product__link-title {
-    padding: 30px 58px 20px;
+    padding: 37px 58px 20px;
 
     font-size: 20px;
     text-align: center;
@@ -77,21 +85,31 @@
 
   .product__info {
     font-size: 16px;
+    margin: 0 0 33px;
+  }
+
+  .product__info td {
+    width: 50%;
+    padding: 7px 0 8px;
   }
 
   .product__info tr {
-    padding: 7px 0 6px;
-
     border-bottom: 1px solid #cdcdcd;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .product {
+  .product__link-image {
+    width: 245px;
+    margin: -80px 0 0;
+  }
+
+  .product__wrapper,
+  .product__button {
     width: 169px;
   }
 
   .product__link-title {
-    padding: 50px 15px 20px;
+    padding: 35px 15px 20px;
   }
 }

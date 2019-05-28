@@ -1,24 +1,35 @@
 .page-footer {
+  background-color: $bg-grey;
+}
+
+.page-footer__container {
   width: 280px;
   margin: 0 auto;
-  padding: 40px 20px 22px;
+  padding: 39px 20px 22px;
 
   text-align: center;
-
-  background-color: $bg-grey;
 }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
-  margin-bottom: 22px;
+  margin: 0 0 22px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,6 +41,8 @@
   .page-footer__logo {
     width: 162px;
     margin: 0;
+
+    text-align: left;
   }
 
   .page-footer__social {
@@ -38,8 +51,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__container {
     width: 1220px;
-    padding: 58px 110px;
+    padding: 58px 0;
   }
 }

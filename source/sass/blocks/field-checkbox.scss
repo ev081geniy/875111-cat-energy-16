@@ -1,0 +1,135 @@
+.field-checkbox {
+  position: relative;
+
+  padding: 0;
+  border: 0;
+}
+
+.field-checkbox__title {
+  max-width: 181px;
+  margin: 0 0 22px;
+  padding: 4px 20px 15px 0;
+
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: -20px;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: $bg-green;
+    z-index: -1;
+  }
+}
+
+.field-checkbox__list {
+  @include list-reset;
+}
+
+.field-checkbox__item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 12px;
+}
+
+.field-checkbox__label {
+  position: relative;
+
+  padding: 6px 0 6px 45px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #bababa;
+  }
+}
+
+.field-checkbox__input:checked + .field-checkbox__label {
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 5px;
+
+    width: 21px;
+    height: 16px;
+
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.field-checkbox__input:disabled + .field-radio__label {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox__title {
+    max-width: none;
+    margin: 0 0 57px;
+    padding: 23px 40px 0 0;
+
+    &::after {
+      top: 45px;
+      right: -40px;
+    }
+  }
+
+  .field-checkbox__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .field-checkbox__item {
+    width: 287px;
+    margin: 0 0 32px;
+  }
+
+  .field-checkbox__label {
+    padding: 10px 0 10px 59px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .field-checkbox__input:checked + .field-checkbox__label {
+    &::after {
+      top: 12px;
+      left: 9px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-checkbox__item {
+    width: 245px;
+  }
+}

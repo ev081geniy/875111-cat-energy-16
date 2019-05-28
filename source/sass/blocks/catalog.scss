@@ -1,13 +1,11 @@
 .catalog {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 27px;
 }
 
 .catalog__title {
-  margin: 0;
-  margin-bottom: 27px;
-  padding-left: 20px;
+  margin: 0 0 28px;
+  padding: 15px 0 0 20px;
 }
 
 .catalog__list {
@@ -19,12 +17,12 @@
 @media (min-width: $tablet-width) {
   .catalog {
     width: 768px;
-    margin-bottom: 15px;
+    margin: 0 auto;
   }
 
   .catalog__title {
-    margin-bottom: 75px;
-    padding-left: 30px;
+    margin: 0 0 77px;
+    padding: 0 0 0 30px;
   }
 
   .catalog__list {
@@ -44,7 +42,12 @@
     width: 1300px;
   }
 
+  .catalog__title {
+    margin: 0 0 43px;
+    padding: 45px 0 0 40px;
+  }
+
   .catalog__item {
-    margin: 20px 40px;
+    margin: 122px 40px 20px;
   }
 }
