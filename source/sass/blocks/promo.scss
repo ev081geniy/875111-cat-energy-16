@@ -5,11 +5,11 @@
 
   text-align: center;
 
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
 }
@@ -54,7 +54,7 @@
   }
 
   .promo__title {
-    margin: 0 0 40px;
+    margin: 0 0 43px;
 
     font-size: 60px;
     line-height: 60px;
@@ -63,7 +63,7 @@
   }
 
   .promo__slogan {
-    margin: 0 0 50px;
+    margin: 0 0 47px;
 
     font-size: 20px;
     line-height: 20px;
@@ -90,12 +90,12 @@
   .promo {
     width: 1140px;
     margin: 0 auto 80px;
-    padding: 0 40px 187px 120px;
+    padding: 0 40px 188px 120px;
   }
 
   .promo__title {
     width: 530px;
-    margin: 0 0 42px;
+    margin: 0 0 41px;
     padding: 80px 0 0;
   }
 

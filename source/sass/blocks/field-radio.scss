@@ -45,7 +45,7 @@
 }
 
 .field-radio__input:checked + .field-radio__label {
-  &:after {
+  &::after {
     content: "";
 
     position: absolute;

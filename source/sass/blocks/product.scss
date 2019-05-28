@@ -17,7 +17,7 @@
 
 .product__link-title {
   display: block;
-  padding: 22px 50px 10px 0;
+  padding: 22px 50px 12px 0;
 
   font-size: 16px;
   line-height: 20px;
@@ -27,18 +27,26 @@
 }
 
 .product__info {
-  display: flex;
-  flex-direction: column;
   width: 100%;
 
   font-family: $font-second;
   font-size: 12px;
   line-height: 16px;
+
+  border-collapse: collapse;
 }
 
-.product__info tr {
-  display: flex;
-  justify-content: space-between;
+.product__info td {
+  width: 50%;
+  padding: 0;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &:last-child {
+    text-align: right;
+  }
 }
 
 .product__button {
@@ -63,7 +71,7 @@
   }
 
   .product__wrapper,
-  .product__button  {
+  .product__button {
     width: 249px;
     margin: 0 auto;
   }
@@ -80,9 +88,12 @@
     margin: 0 0 33px;
   }
 
-  .product__info tr {
-    padding: 7px 0 6px;
+  .product__info td {
+    width: 50%;
+    padding: 7px 0 8px;
+  }
 
+  .product__info tr {
     border-bottom: 1px solid #cdcdcd;
   }
 }
