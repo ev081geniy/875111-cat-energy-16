@@ -48,7 +48,7 @@
         <h2 class="form__title section-title">Подбор программы</h2>
         <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <div class="form__wrapper">
-          <fieldset class="form__general field-input">
+          <div class="form__general field-input">
             <ul class="field-input__list">
               <li class="field-input__item">
                 <label class="field-input__label" for="field-name">Имя:*</label>
@@ -63,11 +63,11 @@
                 <input class="field-input__input" type="number" min="1" max="30" id="field-age" name="cat-age" placeholder="7">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form__program-type field-radio">
+          </div>
+          <div class="form__program-type field-radio">
             <ul class="field-radio__list">
               <li class="field-radio__item">
-                <input class="field-radio__input visually-hidden" type="radio" id="radio-losing" name="program-type" value="losing" checked="">
+                <input class="field-radio__input visually-hidden" type="radio" id="radio-losing" name="program-type" value="losing" checked>
                 <label class="field-radio__label" for="radio-losing">Похудение</label>
               </li>
               <li class="field-radio__item">
@@ -79,10 +79,10 @@
                 <label class="field-radio__label" for="radio-advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
         </div>
-        <fieldset class="form__contact field-input">
-          <legend class="field-input__title section-subtitle">Контактные данные (владельца кота)</legend>
+        <div class="form__contact field-input">
+          <h3 class="field-input__title section-subtitle">Контактные данные (владельца кота)</h3>
           <ul class="field-input__list">
             <li class="field-input__item field-input__item--mail">
               <label class="field-input__label" for="field-email">E-mail:*</label>
@@ -95,13 +95,13 @@
               <svg width="20" height="20"><use xlink:href="#icon-phone"></use></svg>
             </li>
           </ul>
-        </fieldset>
+        </div>
         <div class="form__comment field-textarea">
           <label class="field-textarea__title section-subtitle" for="field-comment">Комментарий</label>
           <textarea class="field-textarea__textarea" id="field-comment" name="comment" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <fieldset class="form__additionally field-checkbox">
-          <legend class="field-checkbox__title section-subtitle">Дополнительно</legend>
+        <div class="form__additionally field-checkbox">
+          <h3 class="field-checkbox__title section-subtitle">Дополнительно</h3>
           <ul class="field-checkbox__list">
             <li class="field-checkbox__item">
               <input class="field-checkbox__input visually-hidden" type="checkbox" id="checkbox-sweetener" name="sweetener" checked="">
@@ -120,7 +120,7 @@
               <label class="field-checkbox__label" for="checkbox-vitamins">Витамины</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
         <div class="form__submit">
           <button class="form__button button button--form" type="submit">Отправить заявку</button>
           <p class="form__footnote">* — Обязательные поля</p>

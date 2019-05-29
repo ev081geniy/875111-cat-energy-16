@@ -1,11 +1,9 @@
 .field-input {
   position: relative;
-
-  padding: 0;
-  border: 0;
 }
 
 .field-input__title {
+  display: inline-block;
   max-width: 202px;
   margin: 0 0 20px;
   padding: 4px 20px 15px 0;
@@ -144,23 +142,23 @@
   }
 
   .field-input__input {
-    padding: 10px 19px;
+    padding: 14px 19px;
 
     font-size: 20px;
-    line-height: 20px;
+    line-height: 22px;
 
     &::placeholder {
       font-size: 20px;
-      line-height: 20px;
+      line-height: 22px;
     }
 
     &:active,
     &:focus {
-      padding: 9px 18px;
+      padding: 13px 18px;
     }
 
     &:invalid {
-      padding: 9px 18px;
+      padding: 13px 18px;
     }
   }
 }

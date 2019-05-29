@@ -97,10 +97,10 @@
   .contacts__info-block {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc((100% - 1300px) / 2 + 40px);
 
     width: 410px;
-    padding: 65px 85px 55px 75px;
+    padding: 62px 85px 58px 76px;
 
     background-color: $bg-white;
   }

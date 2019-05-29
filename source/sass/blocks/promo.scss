@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     width: 486px;
     padding: 0 132px 530px 90px;
     margin: 0 auto 0;
@@ -68,6 +69,7 @@
     font-size: 20px;
     line-height: 20px;
     color: $fc-black;
+    text-align: left;
   }
 
   .promo__img {
@@ -100,6 +102,7 @@
   }
 
   .promo__slogan {
+    width: 530px;
     margin: 0 0 52px;
   }
 

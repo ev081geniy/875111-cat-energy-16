@@ -1,11 +1,9 @@
 .field-checkbox {
   position: relative;
-
-  padding: 0;
-  border: 0;
 }
 
 .field-checkbox__title {
+  display: inline-block;
   max-width: 181px;
   margin: 0 0 22px;
   padding: 4px 20px 15px 0;
@@ -58,11 +56,6 @@
 
     border: 1px solid #cdcdcd;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: #bababa;
-  }
 }
 
 .field-checkbox__input:checked + .field-checkbox__label {
@@ -81,7 +74,16 @@
   }
 }
 
-.field-checkbox__input:disabled + .field-radio__label {
+.field-checkbox__input:hover + .field-checkbox__label,
+.field-checkbox__input:focus + .field-checkbox__label {
+  &::before,
+  &::before {
+    border-color: #bababa;
+  }
+}
+
+.field-checkbox__input:disabled + .field-checkbox__label,
+.field-checkbox__input:active + .field-checkbox__label {
   opacity: 0.3;
 }
 
